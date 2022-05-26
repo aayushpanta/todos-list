@@ -6,7 +6,7 @@ import Footer from './MyComponents/Footer';
 import About from './MyComponents/About';
 import { useEffect, useState } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Header title="Todos List" searchBar={false} />
       
     <Routes>
@@ -70,7 +70,7 @@ function App() {
     <Route path="about" element={<About />} />
     </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }
